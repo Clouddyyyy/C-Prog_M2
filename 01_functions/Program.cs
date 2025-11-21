@@ -1,9 +1,14 @@
 ﻿namespace _01_functions;
 
-class Program
+internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Program program = new Program();
+        program.Run();
+    }
+    internal void Run()
+    {
+        Console.WriteLine("Dit is het start van mijn programma");
     }
 }
