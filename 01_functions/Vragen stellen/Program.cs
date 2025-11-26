@@ -1,24 +1,7 @@
-﻿namespace Return;
+﻿namespace Vragen_stellen;
 
 internal class Program
 {
-    string[] vragen = new string[]
-    {
-        "What 1997 N64 video game features James Bond and is named after the 1996 film?",
-        "What arcade game was called Puckman in Japan?"
-    };
-    internal string GetVraag(int vraagIndex)
-    {
-        return vragen[vraagIndex];
-
-        string vraag0 = GetVraag(0);
-        string vraag1 = GetVraag(1);
-        string vraag2 = GetVraag(2);
-        string vraag3 = GetVraag(3);
-        string vraag4 = GetVraag(4);
-    }
-
-
     static void Main(string[] args)
     {
         Program program = new Program();
@@ -75,19 +58,5 @@ internal class Program
         string antwoord = Console.ReadLine();
 
         Console.WriteLine(antwoord);
-    }
-    internal void vraag7()
-    {
-        Console.WriteLine("What is the worst game you played but that you liked anyway?");
-        string antwoord = Console.ReadLine();
-
-        return antwoord;
-        string antwoord7 = vraag7();
-        Console.WriteLine("antwoord7");
-    }
-    internal string GetRandomVraag()
-    {
-        int random = 6;
-        return;
     }
 }
