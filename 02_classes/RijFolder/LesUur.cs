@@ -7,3 +7,7 @@ internal class LesUur
     internal RijLeraar rijLeraar;
     internal Auto auto;
 }
+
+
+    
+   

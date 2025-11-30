@@ -10,3 +10,6 @@ internal class Student
     internal RijTest rijTest;
 
 }
+
+
+   

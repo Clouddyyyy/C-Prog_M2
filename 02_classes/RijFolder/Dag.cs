@@ -5,3 +5,6 @@ internal class Dag
     internal DataTime datum;
     internal LesUur[] lesuren;
 }
+
+
+    
