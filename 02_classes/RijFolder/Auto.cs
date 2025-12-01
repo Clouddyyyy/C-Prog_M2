@@ -1,4 +1,4 @@
-namespace Auto;
+namespace RijFolder;
 
 internal class Auto
 {

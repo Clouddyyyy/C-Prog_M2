@@ -1,8 +1,8 @@
-namespace TheorieTest;
+namespace RijFolder;
 
 internal class TheorieTest
 {
     internal int aantalFouten;
     internal bool gehaald;
-    internal DataTime afnameDatum;
+    internal DateTime afnameDatum;
 }

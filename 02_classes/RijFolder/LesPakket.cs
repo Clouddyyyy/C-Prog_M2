@@ -1,4 +1,4 @@
-namespace LesPakket;
+namespace RijFolder;
 
 internal class LesPakket
 {

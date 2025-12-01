@@ -1,9 +1,12 @@
-namespace Dag;
+namespace RijFolder;
 
 internal class Dag
 {
-    internal DataTime datum;
+    internal DateTime datum;
     internal LesUur[] lesuren;
+
+    internal Student student;
+    internal LesUur lesUur;
 }
 
 

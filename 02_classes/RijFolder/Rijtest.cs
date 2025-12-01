@@ -1,7 +1,7 @@
-namespace RijTest;
+namespace RijFolder;
 
 internal class RijTest
 {
     internal bool gehaald;
-    internal DataTime afnameDatum;
+    internal DateTime afnameDatum;
 }

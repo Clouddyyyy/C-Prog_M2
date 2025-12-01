@@ -1,4 +1,6 @@
-namespace Student;
+using RijSchool;
+
+namespace RijFolder;
 
 internal class Student
 {
@@ -8,6 +10,8 @@ internal class Student
     internal RijLeraar leraar;
     internal TheorieTest theorietest;
     internal RijTest rijTest;
+    internal LesUur lesUur;
+    internal Dag dag;
 
 }
 
