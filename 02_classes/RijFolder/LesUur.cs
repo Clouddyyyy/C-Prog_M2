@@ -1,5 +1,3 @@
-using RijSchool;
-
 namespace RijFolder;
 
 internal class LesUur
@@ -8,7 +6,7 @@ internal class LesUur
     internal Student student;
     internal RijLeraar rijLeraar;
     internal Auto auto;
-    internal Dag dag;
+    
 }
 
 

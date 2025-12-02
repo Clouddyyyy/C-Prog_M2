@@ -1,10 +1,7 @@
-﻿using RijSchool;
-
-namespace RijFolder;
-
-internal class Program
+﻿namespace RijFolder;
+class RijFolder
 {
-    internal void Run()
+static void Main(string[] args)
     {
      Auto auto1 = new Auto()
     {
@@ -23,20 +20,13 @@ internal class Program
         merk = "volvo"
     };
 
-    RijLeraar rijLeraar = new RijLeraar()
+    RijLeraar rijLeraar = new RijLeraar
     {
         leeftijd = 30,
         naam = "John",
         zzp = false
     };
-     LesUur lesUur = new LesUur()
-    {
-        auto = auto1,
-        rijLeraar = rijLeraar,
-       
 
-        tijd = 1130
-    };
      LesPakket lesPakket = new LesPakket
         {
             urenGekocht = 15,
@@ -44,51 +34,48 @@ internal class Program
             examenPogingen = 2,
             automaat = true
         };
-         TheorieTest TheorieTest = new TheorieTest
+
+          TheorieTest TheorieTest = new TheorieTest
         {
             aantalFouten = 6,
             gehaald = true,
             afnameDatum = DateTime.Now
         };
-        RijTest rijTest = new RijTest
+
+         RijTest rijTest = new RijTest
         {
             gehaald = true,
             afnameDatum = DateTime.Now
         };
 
-string[] LesUrenArray = new string[2];
-LesUrenArray[0] = ("3 uur");
-LesUrenArray[1] = ("4 uur");
-LesUrenArray[2] = ("5 uur");
-
-
-    Dag dag = new Dag
-    {
-        datum = DateTime.Now,
-        lesUur = lesUur
-      
-    };
-
- Student student = new Student()
+     
+    
+       Student student = new Student
     {
       naam = "Cloud",
       leeftijd = 116,
       lespakket = lesPakket,
       theorietest = TheorieTest,
-      rijTest = rijTest,
-      lesUur = lesUur,
-      dag = dag
-      
+      rijTest = rijTest
     };
-    }
+       
 
-    static void Main(string[] args)
-        {
-            Program program = new Program();
-            program.Run();
-        }
-
+    LesUur[] LesUrenArray = new LesUur[3];
+    LesUrenArray[0] = new LesUur() {tijd = 11, auto = auto2, rijLeraar = rijLeraar, student = student};
+    LesUrenArray[1] = new LesUur() {tijd = 13, auto = auto1, rijLeraar = rijLeraar, student = student};
+    LesUrenArray[2] = new LesUur() {tijd = 15, auto = auto2, rijLeraar = rijLeraar, student = student};
    
 
-     
+    Dag dag = new Dag
+    {
+        datum = DateTime.Now,
+        LesUren = LesUrenArray
+      
+    };
+    student.dag = dag;
+    Console.WriteLine($"student {student.naam}: leeftijd {student.leeftijd}, heeft {student.dag.LesUren.Length} lesuren gepland.");
+
+   
+        }
+
 }

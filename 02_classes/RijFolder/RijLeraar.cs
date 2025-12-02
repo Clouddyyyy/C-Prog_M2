@@ -1,4 +1,4 @@
-namespace RijSchool;
+namespace RijFolder;
 
 internal class RijLeraar
 {
@@ -6,6 +6,3 @@ internal class RijLeraar
     internal int leeftijd;
     internal bool zzp;
 }
-
-
-   
