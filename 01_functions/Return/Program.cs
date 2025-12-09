@@ -21,6 +21,7 @@ internal class Program
     static void Main(string[] args)
     {
         Program program = new Program();
+        program.Run();
         program.vraag1();
         program.vraag2();
         program.vraag3();
@@ -31,14 +32,12 @@ internal class Program
     }
     internal void Run()
     {
+        string rndvraag = GetRandomVraag();
+        Console.WriteLine(rndvraag);
         string vraag0 = GetVraag(0);
         string vraag1 = GetVraag(1);
         string vraag2 = GetVraag(2);
         string vraag3 = GetVraag(3);
-        string vraag4 = GetVraag(4);
-        string vraag5 = GetVraag(5);
-        string vraag6 = GetVraag(6);
-        string vraag7 = GetVraag(7); 
     }
 
     internal void vraag1()
@@ -95,13 +94,9 @@ internal class Program
     {
        
        Random dice = new Random(); //maak random
-        string[] Random = ["What 1997 N64 video game features James Bond and is named after the 1996 film?",
-         "What arcade game was called Puckman in Japan?", 
-         "Which spooky 2001 GameCube game starring Mario's brother got a reboot for Nintendo Switch in 2019?",
-         "Which video game console released in 2006 pioneered the use of motion controls in its gameplay?",]; //roll;
-
-        int GetRandomVraag= dice.Next(Random.Length);
-        
+      
+        int GetRandomVraag= dice.Next(vragen.Length);
+        Console.WriteLine("we pakkene" + GetRandomVraag);
         return GetVraag(GetRandomVraag); //pak vraag;
     }
 }
